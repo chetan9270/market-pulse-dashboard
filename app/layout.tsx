@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import "./icon/icon.png"
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "Production-ready dashboard for live gold and cryptocurrency prices with charts, watchlist, and alerts.",
     icons: {
-    icon: "/icon.png"
+    icon: "icon.png"
   }
 };
 
