@@ -10,7 +10,10 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Market Pulse | Gold & Crypto Dashboard",
   description:
-    "Production-ready dashboard for live gold and cryptocurrency prices with charts, watchlist, and alerts."
+    "Production-ready dashboard for live gold and cryptocurrency prices with charts, watchlist, and alerts.",
+    icons: {
+    icon: "/icon.png"
+  }
 };
 
 export default function RootLayout({
