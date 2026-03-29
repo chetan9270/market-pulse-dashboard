@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Manrope";
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  @apply min-h-screen bg-canvas text-slate-100 antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgba(244, 193, 93, 0.16), transparent 24%),
+    radial-gradient(circle at top right, rgba(53, 208, 255, 0.16), transparent 28%),
+    linear-gradient(180deg, #070b14 0%, #09101b 48%, #05070d 100%);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(83, 133, 212, 0.7) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(83, 133, 212, 0.65);
+  border-radius: 999px;
+}
+
+.glass-panel {
+  @apply border border-white/10 bg-white/5 backdrop-blur-xl;
+}
+
+.soft-ring {
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+    0 20px 60px rgba(0, 0, 0, 0.28);
+}
+
+.status-dot {
+  @apply inline-block h-2.5 w-2.5 rounded-full;
+}
